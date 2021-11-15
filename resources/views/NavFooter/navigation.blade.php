@@ -14,19 +14,19 @@
         <ul class="navbar-nav nav-pills">
         <li class="nav-item">
         <a class="nav-link
-            @if($title == 'Home')
+            @if('title' == 'Home')
             active
             @endif" href="/">Home</a>
         </li>
         <li class="nav-item">
             <a class="nav-link
-            @if($title == 'Player')
+            @if('title' == 'Player')
             active
             @endif" href="/player">Player</a>
         </li>
         <li class="nav-item">
         <a class="nav-link
-            @if($title == 'Account')
+            @if('title' == 'Account')
             active
             @endif" href="/account">Account</a>
         </li>

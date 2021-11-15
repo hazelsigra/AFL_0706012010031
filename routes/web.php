@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\PlayerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +19,6 @@ Route::get('/', function () {
     return view('welcome', ['title' => 'Home']);
 });
 
-Route::get('/player', function () {
-    return view('player', ['title' => 'Player']);
-});
+Route::resource('player', PlayerController::class);
 
-Route::get('/account', function () {
-    return view('account', ['title' => 'Account']);
-});
+Route::resource('account', AccountController::class);
